@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="ngBookmark">
+<head>
+	<meta charset="UTF-8">
+	<title>ngBookmark</title>
+	<link rel="stylesheet" type="text/css" href="components/bootstrap/css/bootstrap.css">
+	<script src="components/angular/angular.js"></script>
+	<script src="src/main.js"></script>
+</head>
+<body ng-controller="listCtrl">
+	<input type="text" ng-model="searchText">
+	<test-ex test>sss</test-ex>
+	<ul ng-repeat="bookmark in bookmarkList | filter:searchText">
+		<li>
+			<p ng-click="showDetail(bookmark)">{{bookmark.title}}</p>
+		</li>
+	</ul>
+</body>
+</html>
