@@ -17,6 +17,10 @@ angular.module('ngBookmark', []).
 			{ title : "google8", url:"google.com" }
 		];
 
+		chrome.bookmarks.getTree(function(bookmarkTreeNodes) {
+     	console.log(bookmarkTreeNodes);
+    });
+
 		$scope.bookmarkList = bookmarkList;
 		$scope.showDetail = function showDetail (bookmark) {
 			console.log(bookmark);

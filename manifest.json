@@ -1,0 +1,15 @@
+{
+  "name": "Ng Bookmark",
+  "version": "1.0",
+  "description": "Bookmark based on AngularJS",
+  "permissions": [
+    "bookmarks"
+  ],
+  "browser_action": {
+      "default_title": "My Bookmarks",
+      "default_icon": "images/icon.png",
+      "default_popup": "index.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self' "
+ }
